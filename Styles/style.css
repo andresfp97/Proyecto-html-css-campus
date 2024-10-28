@@ -1,54 +1,865 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.home{
-    display: grid;
-    grid-template-columns: repeat(6 ,1fr);
-    grid-template-rows: 0fr repeat(7 ,1fr);
-    height: 100vh;
-    width: 100vw;
-    background-color: #fff35f;
+body{
+    background-color: #feb4cd;
 }
 
-header{
-
+/* caja contenedora*/
+.home {
+    background-color: #fff460;
+    height: 74vw;
+    width: 100%;
+}
+/*barra de navegacion*/
+nav {
     background-color: #feb4cd;
-    grid-column:  span 7;
 }
 
 nav ul {
-display:flex;
-list-style: none;
-flex-direction: row;
-justify-content: flex-end;
-align-items: center;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-a{
+nav ul li {
+    margin: 3% 2%;
+}
+
+nav ul li a {
     text-decoration: none;
     display: flex;
     align-items: center;
     color: black;
-    font-weight: 1000;
-
-}
-
-nav ul li {
-    margin: 1% 2%;
+    font-family: 'Gulfs Display';
+    font-size: 1.7vw;
+    font-weight: 100;
 }
 
 nav ul li img {
     height: 25px;
-    padding-right:10%;
-   }
-
-   .home-1{
-    background-color: #feb4cd;
-    grid-column: span 7;
-    grid-row: span 4;
+    padding-right: 10%;
+}
+/* inicio*/
+.home-1 {
     border-bottom: 2px solid black;
+    background-color: #feb4cd;
+    height: 38vw;
+}
 
-   }
+.letras-home {
+    width: 55%;
+    position: relative;
+    text-align: center;
+    left: 23%;
+    padding-top: 2%;
+    z-index: 1;
+}
+
+.letras-home h1 {
+    font-size: 6vw;
+    color: #015dfd;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+
+.mu-lateral {
+    width: 20%;
+    position: absolute;
+    left: 76%;
+    top: 9vw;
+}
+
+.mu-lateral img {
+    border-radius: 20%;
+    border: 2px solid black;
+    width: 95%;
+    object-fit: cover;
+}
+
+.azul-home {
+    position: absolute;
+    width: 50%;
+    right: 80%;
+    top: 20vw;
+    z-index: 2;
+}
+
+.azul-home img {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.estrellas {
+    position: absolute;
+    width: 7%;
+    right: 72%;
+    top: 13vw;
+}
+
+.estrellas img {
+    width: 35%;
+}
+
+.estrellas2 {
+    position: absolute;
+    width: 7%;
+    right: 70%;
+    top: 29vw;
+}
+
+.estrellas2 img {
+    width: 80%;
+}
+
+.estrellas3 {
+    position: absolute;
+    width: 7%;
+    right: 20%;
+    top: 35vw;
+}
+
+.estrellas3 img {
+    width: 60%;
+}
+
+.casados-home {
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 22vw;
+}
+
+.casados-home img {
+    border-radius: 220px;
+    border: 2px solid black;
+    width: 99%;
+    object-fit: cover;
+}
+
+.casados-home1 {
+    width: 25%;
+    position: absolute;
+    left: -5%;
+    top: 30vw;
+}
+
+.casados-home1 img {
+    border-radius: 28px;
+    border: 2px solid black;
+    width: 99%;
+    object-fit: cover;
+}
+
+.aster-home {
+    position: absolute;
+    width: 13%;
+    left: 23%;
+    top: 40vw;
+}
+
+.aster-home img {
+    width: 100%;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+.sello-home {
+    position: absolute;
+    width: 13%;
+    right: 12%;
+    top: 40vw;
+    -webkit-animation: rotate-center 20s ease-in-out infinite both;
+    animation: rotate-center 20s ease-in-out infinite both;
+}
+.sello-home img {
+    width: 100%;
+}
+/* seccion de nosotros*/
+.nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 1fr 10%;
+    height: 47vw;
+    background-color: #fff460;
+}
+.columna-nos{
+    display: flex;
+    padding-left: 5%;
+    align-items: center;
+}
+.columna-nos img{
+    width: 10%;
+    margin-right:4%;
+}
+ .nosotros h3{
+    font-family: sans-serif;
+    font-size: 80%;
+ }
+.columna-nos2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%; 
+}
+.columna-nos2 img{
+    width: 10%;
+    margin-left:4%;
+}
+.caja-rota-nos{
+    position: absolute;
+    width: 30%;
+    height: 35vw;
+    left: 10%;
+    transform: rotate(-5deg);
+    background-color: #feb4cd;
+    border: 2px solid black;
+    top: 79vw;
+}
+.caja-rota-nos1{
+    position: absolute;
+    width: 30%;
+    height: 35vw;
+    left: 11%;
+    transform: rotate(-5deg);
+    background-color: #feb4cd;
+    border: 2px solid black;
+    top: 78vw;
+}
+.caja-rota-nos2{
+    position: absolute;
+    width: 30%;
+    height: 35vw;
+    left: 12%;
+    transform: rotate(-5deg);
+    background-color: #ffffff;
+    border: 2px solid black;
+    top: 77vw;
+    padding: 1vw;
+}
+.caja-rota-nos2 img{
+    width: 100%;
+    height: 33vw;
+    object-fit: cover;
+    border: 2px solid black;
+
+}
+.cajon{
+    width: 85%;
+}
+.letrero{
+    font-family: 'Gulfs Display';
+    font-weight: 200;
+    font-size: 10vw;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #015dfd;
+    line-height: 0.9;
+}
+.letrero2{
+    font-weight: 1000;
+    font-size: 1.4vw;
+}
+.letrero3{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    position: absolute;
+    top: 10v6w;
+}
+.letra1{
+    font-family: 'Gulfs Display';
+    font-weight: 100;
+    width: 50%;
+}
+.anillo{
+    width: 25%;
+}
+.anillo img{
+    width: 100%;
+}
+.estrella{
+    width: 22%;
+}
+.estrella img{
+    width: 100%;
+}
+.galeria{
+    height: 66vw;
+    background-color: white;
+    
+}
+.galeria-naranja{
+    position: absolute;
+    border-top: 2px solid black;
+    top: 167.2vw;
+    background-color: #ff6541;
+    height: 20vw;
+    width: 100%;
+
+}
+.fotos{
+    
+    position: absolute;
+    width: 100%;
+    top: 128vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+}
+
+.cajitas{
+    width: 19%;
+    margin-bottom: 2vw;
+}
+.cajitas2{
+    width: 34%;
+        
+}
+
+.cajitas img{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 35px;
+}
+.cajitas2 img{
+    border: 1px solid black;
+    width: 100%;
+    height: 25vw;
+    border-radius: 35px;
+}
+/* seccion de precio*/
+.precio{
+    height: 66vw;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: repeat(4 ,1fr);
+}
+.cajas1{
+    grid-column: span 2;
+    background-color:#feb4cd;
+    border: 1px solid black;
+}
+.cajas1 h1{
+    font-size: 3.7vw;
+    padding: 2vw 5.3vw;
+    color: #ff6541;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.cajas2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#fff460;
+    grid-row: span 2;
+    border: 1px solid black;
+}
+.cajas2 .inteructor{
+    width: 50%;
+    background-color: #ff6541;
+    height: 6vw;
+    border-radius: 44px;
+}
+.cajas2 h3{
+    text-align: center;
+    font-size: 2.2vw;
+    color: #ff6541;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.inteructor .circulo{
+    width: 51%;
+    background-color: #ffffff;
+    height: 5vw;
+    border-radius: 44px;
+    border: 4px solid yellow;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+}
+.circulo img{
+    width: 100%;
+}
+.anillos{
+    position: absolute;
+    width: 9vw;
+    top: 214vw;
+    left: 37vw;
+}
+.anillos img{
+    width: 100%;
+}
+.cajas3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#fff460;
+    grid-row: span 2;
+    border: 1px solid black;
+}
+.cajas3 .inteructor2{
+    width: 50%;
+    background-color: #ffb4ce;
+    height: 6vw;
+    border-radius: 44px;
+}
+.cajas3 h3{
+    text-align: center;
+    font-size: 2.2vw;
+    color: #015dfd;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.inteructor2 .circulo2{
+    width: 51%;
+    background-color: #ffffff;
+    height: 5vw;
+    border-radius: 44px;
+    border: 4px solid yellow;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+}
+.circulo2 img{
+    width: 100%;
+}
+.cajas4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#015dfd;
+    grid-row: span 2;
+    border: 1px solid black;
+}
+.cajas4 h3{
+    text-align: center;
+    font-size: 2.6vw;
+    color: #ffffff;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.cajas4 img{
+    width: 8vw;
+}
+.cajas5{
+    grid-column: span 2;
+    background-color:#feb4cd;
+    border: 1px solid black;   
+}
+.cajas5 h3{
+    position: absolute;
+    font-size: 2.2vw;
+    color: #015dfd;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+    left: 3vw;
+    top: 206vw;
+}
+.cajas5 .inteructor4{
+    position: absolute;
+    font-weight: 200;
+    left: 3vw;
+    top: 213vw;
+    width: 34vw;
+    background-color: #fff460;
+    height: 1.7vw;
+    border-radius: 44px;
+    border: 1px solid black;
+}
+.inteructor4 .circulo4{
+    position: absolute;
+    width: 21%;
+    background-color: #fff460;
+    height: 7vw;
+    border-radius: 50px;
+    border: 32px solid #015dfd;
+    top: -3vw;
+    left: 2vw;
+}
+.camara{
+    position: absolute;
+    width: 9vw;
+    top: 216vw;
+    left: 75vw;
+}
+.camara img{
+    width: 100%;
+}
+.cajas6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#fff460;
+    grid-row: span 2;
+    border: 1px solid black;
+}
+.cajas6 .inteructor3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    background-color: #ffffff;
+    height: 6vw;
+    border-radius: 44px;
+    border: 2PX solid black;
+}
+.inteructor3 img{
+    width: 15%;
+}
+.inteructor3 h1{
+    text-align: center;
+    font-size: 4vw;
+    color: #feb4cd;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+
+}
+.cajas6 h3{
+    text-align: center;
+    font-size: 2.2vw;
+    color: #015dfd;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.cajas7{
+    background-color:#000000;
+    grid-column: span 2;
+    grid-row: span 2;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.cajas7 h3{
+    text-align: center;
+    font-size: 2.2vw;
+    color: #ffffff;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.lugar-region{
+    padding: 2vw;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+.lugar-region p{
+    font-size: 1.5vw;
+}
+.cajas8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-column: span 2;
+    background-color:#ff6541;
+    border: 1px solid black;
+}
+.cajas8 h3{
+    text-align: center;
+    padding: 0vw 5.3vw;
+    font-size: 2.2vw;
+    color: #feb4cd;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.cajas8 h1{
+    font-size: 6vw;
+    padding: 0vw 5.3vw;
+    color: #fff460;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.cajas9{
+    grid-column: span 2;
+    background-color:#feb4cd;
+    border: 1px solid black;
+}
+.cajas9 h3{
+    position: absolute;
+    font-size: 2.2vw;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+    left: 63vw;
+    top: 241vw;
+}
+.cajas9 h5{
+    width: 20vw;
+    position: absolute;
+    font-size: 2.2vw;
+    font-family: sans-serif;
+    line-height: 1.1;
+    font-weight: 200;
+    left: 63vw;
+    top: 247vw;
+    color: #FF5722;
+    border-bottom: 5px solid #FF5722;
+}
+.circulo5{
+    position: absolute;
+    width: 7%;
+    background-color: #FF5722;
+    height: 7vw;
+    border-radius: 50px;
+    border: 1px solid black;
+    top: 244vw;
+    left: 88vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 1000;
+}
+/* seccion de contacto*/
+.contacto{
+    height: 52vw;
+    background-color: #ffb4ce;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    align-items: center;
+    justify-items: center;
+}
+.ilus1 img{
+    width: 73%;
+    margin-left: 6vw;
+    margin-top: 6vw;
+    position: relative;
+    z-index: 1;
+}
+
+.ilus2 img {
+    position: absolute;
+    top: 258vw;
+    width: 18%;
+}
+.ilus3 img {
+    position: absolute;
+    top: 275vw;
+    left: 3vw;
+    width: 6%;
+}
+.ilus4 img {
+    position: absolute;
+    top: 284vw;
+    left: 35vw;
+    width: 7%;
+    z-index: 2;
+}
+.ilus5 img {
+    position: absolute;
+    top: 260vw;
+    left: 36vw;
+    width: 10%;
+    z-index: 2;
+}
+.ilus6 img {
+    position: absolute;
+    top: 276vw;
+    left: 36vw;
+    width: 10%;
+    z-index: 2;
+}
+.ilus7 img {
+    position: absolute;
+    top: 292vw;
+    left: 36vw;
+    width: 10%;
+    z-index: 2;
+}
+.ilus8 img {
+    position: absolute;
+    top: 291vw;
+    left: 10vw;
+    width: 18%;
+    z-index: 2;
+}
+.ilus9 img {
+    position: absolute;
+    top: 285vw;
+    left: 8vw;
+    width: 8%;
+    z-index: 2;
+}
+.ilus10 img {
+    position: absolute;
+    top: 295vw;
+    left: 10vw;
+    width: 9%;
+    z-index: 2;
+}
+.ilus11 img {
+    position: absolute;
+    top: 257vw;
+    left: 23vw;
+    width: 12%;
+    z-index: 2;
+}
+.ilus12 img {
+    position: absolute;
+    top: 272vw;
+    left: 39vw;
+    width: 5%;
+    z-index: 2;
+}
+.letras-contacto{
+    display: flex;
+    flex-direction: column;
+}
+.letras-contacto h1{
+    font-size: 6.5vw;
+    color: #015dfd;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+    margin: 1vw 3vw;
+}
+.letras-contacto p{
+    font-family: "Anybody", sans-serif;
+    font-weight: 600;
+    margin: 0vw 3vw;
+}
+.fecha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fecha h5{
+    font-size: 3vw;
+    color:#FF5722;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+    margin: 2vw 3vw;
+}
+.flechas{
+    display: flex;
+    width: 24vw;
+    justify-content: space-evenly;
+    padding: 0vw 5vw
+}
+.flechas img {
+    width: 1.7vw;
+}
+.flechas .fondo-naranja{
+    background-color: #FF5722;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.cuadro-redes{
+    display: flex;
+    width: 90%;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0vw 1vw;
+    border: 1px solid black;
+}
+.redes p{
+    margin: 0;
+    font-size: 0.8vw;
+}
+.fondo-azul {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#9ef3f3;
+}
+.fondo-rosa {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffb4ce;
+}
+.fondo-amarillo {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff460;
+
+}
+.circulo-chat{
+    position: sticky;
+    width: 6vw;
+    background-color: #fff460;
+    border-radius: 64px;
+    border: 1px solid black;
+    top: 37vw;
+    left: 88vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 1000;
+    height: 6vw;
+    z-index: 5;
+    justify-content: center;
+}
+.conteiner{
+    position: relative;
+    top: -6vw;
+}
+
+
+
+
+
+
+
