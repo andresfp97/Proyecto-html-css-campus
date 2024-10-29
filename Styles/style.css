@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Gulfs Display";
+    src: url("../font/GulfsDisplay-Normal/GulfsDisplay-Normal.ttf");
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +17,7 @@ body{
     width: 100%;
 }
 /*barra de navegacion*/
+
 nav {
     background-color: #feb4cd;
 }
@@ -1214,6 +1219,7 @@ nav ul li img {
 }
 .camara img{
     width: 100%;
+    display: none;
 }
 .cajas6{
     display: flex;
@@ -1303,6 +1309,290 @@ nav ul li img {
     text-align: center;
     font-size: 1.2vw;
     font-weight: 1000;
+}
+
+
+/* seccion de contacto*/
+.contacto{
+    height: 56vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 183% 159%;
+}
+.imagenes-contacto{
+    width: 80%;
+    height: 30vw;
+}
+
+.ilus1{
+ 
+ position: relative;
+ top: -29vw;
+
+}
+.ilus1 img{
+    width: 90%;
+    
+}
+.ilus2{
+    position: relative;
+    top: -113vw;
+    width: 34%; 
+}
+.ilus2 img {
+    position: relative;
+    top: 0;
+    width: 100%; 
+}
+
+.ilus3{
+    position: relative;
+    top: -101vw;
+    left: -9vw;
+    width: 19%;
+}
+.ilus3 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.ilus4{
+    position: relative;
+    top: -95vw;
+    left: 64vw;
+    width: 17%;
+    z-index: 2;
+}
+.ilus4 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.ilus5{
+    position: relative;
+    top: -161vw;
+    left: 61vw;
+    width: 21%;
+    z-index: 2;
+}
+
+.ilus5 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+
+.ilus6{
+    position: relative;
+    top: -140vw;
+    left: 65vw;
+    width: 20%;
+    z-index: 2;
+}
+.ilus6 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+.ilus7{
+    position: relative;
+    top: -123vw;
+    left: 68vw;
+    width: 28%;
+    z-index: 2;
+
+}
+.ilus7 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 70%;
+    z-index: 2;
+}
+.ilus8{
+    position: relative;
+    top: -138vw;
+    left: 12vw;
+    width: 37%;
+    z-index: 2;
+}
+.ilus8 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+.ilus9{
+    position: relative;
+    top: -174vw;
+    left: 9vw;
+    width: 22%;
+    z-index: 2;
+}
+.ilus9 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+
+.ilus10{
+    position: relative;
+    top: -170vw;
+    left: 14vw;
+    width: 17%;
+    z-index: 2;
+
+}
+.ilus10 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+
+.ilus11{
+    position: relative;
+    top: -267vw;
+    left: 27vw;
+    width: 33%;
+    z-index: 2;
+}
+.ilus11 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+.ilus12{
+    position: relative;
+    top: -248vw;
+    left: 69vw;
+    width: 11%;
+    z-index: 2;
+}
+.ilus12 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+.letras-contacto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -18vw;
+}
+.letras-contacto h1{
+    font-size: 8.5vw;
+}
+.letras-contacto p{
+    margin: 5vw 3vw;
+}
+.fecha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fecha h5{
+    font-size: 7vw;
+}
+.flechas{
+    display: flex;
+    width: 24vw;
+    justify-content: space-evenly;
+    padding: 0vw 5vw
+}
+.flechas img {
+    width: 3.7vw;
+}
+.flechas .fondo-naranja{
+    width: 5vw;
+    height: 5vw;
+}
+.cuadro-redes{
+    display: flex;
+    width: 90%;
+    margin: 4vw auto;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0vw 1vw;
+    border: 1px solid black;
+    width: 20%;
+    height: 11vw;
+    justify-content: center;
+}
+}
+.redes p{
+    margin: 0 auto;
+    font-size: 1.8vw;
+}
+.fondo-azul {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#9ef3f3;
+}
+.fondo-rosa {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffb4ce;
+}
+.fondo-amarillo {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff460;
+
+}
+.circulo-chat{
+    position: sticky;
+    width: 6vw;
+    background-color: #fff460;
+    border-radius: 64px;
+    border: 1px solid black;
+    top: 85vh;
+    left: 90vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 1000;
+    height: 6vw;
+    z-index: 5;
+    justify-content: center;
+}
+.conteiner{
+    position: relative;
+    top: -6vw;
 }
 
 }
